@@ -69,7 +69,6 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-# ՀԻՄՆական՝ ԱՎԵԼԱՑՎԱԾ Է probability=True ՊԱՐԱՄԵՏՐԸ
 model = SVC(kernel="rbf", C=5.0, gamma='scale', probability=True) 
 model.fit(X_train_scaled, y_train)
 
